@@ -1,0 +1,100 @@
+/* 設定全域字型與背景色 */
+.root {
+    -fx-font-family: "Microsoft JhengHei", sans-serif;
+    -fx-background-color: #fff1f7;
+}
+
+/* 標籤樣式 */
+.label {
+    -fx-text-fill: #333;
+    -fx-font-size: 12px;
+}
+
+/* 標題樣式 */
+.title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #502c3c;
+}
+
+/* 按鈕樣式 */
+.button {
+    -fx-background-color: #cf7fa1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-radius: 5px;
+    -fx-padding: 6px 12px;
+}
+
+/* 按鈕滑鼠懸停效果 */
+.button:hover {
+    -fx-background-color: #b06685;
+}
+
+/* 按鈕聚焦效果 */
+.button:focused {
+    -fx-border-color:  #945f75;
+    -fx-border-radius: 5px;
+    -fx-padding: 5.25px 10.75px;
+}
+
+/* VBox 背景色 */
+.vbox {
+    -fx-background-color: #fff1f7;
+}
+
+/* ScrollPane 邊框顏色 */
+.scroll-pane {
+    -fx-border-color: #a98391;    
+}
+
+/* ScrollPane 內容區背景色 */
+.scroll-pane .viewport {
+    -fx-background-color: #fff1f7;    
+}
+
+/* ScrollPane 滾動條背景色 */
+.scroll-pane .scroll-bar {
+    -fx-background-color: #dfccd4;
+}
+
+/* 滾動條滑塊樣式 */
+.scroll-bar .thumb {
+    -fx-background-color: #efcedc;
+    -fx-border-color: #cdb0bc;
+    -fx-background-radius: 5px;
+    -fx-border-radius:5px;
+}
+
+/* ComboBox 樣式 */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 3px;
+}
+
+/* ComboBox 聚焦效果 */
+.combo-box:focused {
+    -fx-border-color: #d393ae; 
+    -fx-effect: dropshadow(gaussian, rgba(171, 90, 127, 0.4), 7, 0, 0, 0.5);
+}
+
+/* ComboBox 下拉選單滑鼠懸停樣式 */
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #cf7fa1; 
+    -fx-text-fill: white; 
+}
+
+/* ComboBox 下拉選單選取樣式 */
+.combo-box-popup .list-view .list-cell:selected {
+    -fx-background-color: #cf7fa1;
+    -fx-text-fill: white;
+}
+
+/* ComboBox 箭頭顏色 */
+.combo-box .arrow {
+    -fx-background-color: #8f3f61;
+}
+
+
