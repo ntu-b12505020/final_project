@@ -1,4 +1,6 @@
 # final_project
+javafx-sdk-21.0.7
+
 指定題 movie theater 
 cinema.db 是 sqlite
 
