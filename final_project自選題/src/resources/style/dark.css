@@ -1,0 +1,376 @@
+/* JavaFX Dark Theme CSS */
+
+/* 根元素和基本設定 */
+.root {
+    -fx-base: #2b2b2b;
+    -fx-background: #1e1e1e;
+    -fx-control-inner-background: #3c3c3c;
+    -fx-control-inner-background-alt: #2b2b2b;
+    -fx-accent: #0096c9;
+    -fx-default-button: #7289da;
+    -fx-focus-color: #039ed3;
+    -fx-faint-focus-color: #039ed322;
+    -fx-focused-text-base-color: ladder(-fx-selection-bar, -fx-light-text-color 45%, -fx-dark-text-color 46%, -fx-dark-text-color 59%, -fx-mid-text-color 60%);
+    -fx-focused-mark-color: -fx-focused-text-base-color;
+    -fx-dark-text-color: white;
+    -fx-mid-text-color: #d0d0d0;
+    -fx-light-text-color: #f4f4f4;
+    -fx-selection-bar-text: white;
+}
+
+/* 背景面板 */
+.background {
+    -fx-background-color: #1e1e1e;
+}
+
+/* 按鈕樣式 */
+.button {
+    -fx-background-color: #404040;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+}
+
+.button:hover {
+    -fx-background-color: #4a4a4a;
+    -fx-border-color: #666666;
+}
+
+.button:pressed {
+    -fx-background-color: #353535;
+}
+
+.button:focused {
+    -fx-border-color: #0096c9;
+    -fx-border-width: 2px;
+}
+
+/* 預設按鈕（如OK按鈕）*/
+.button:default {
+    -fx-background-color: #7289da;
+    -fx-border-color: #5b6eae;
+}
+
+.button:default:hover {
+    -fx-background-color: #8093dd;
+}
+
+/* 文字輸入框 */
+.text-field,
+.text-area {
+    -fx-background-color: #3c3c3c;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #888888;
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+}
+
+.text-field:focused,
+.text-area:focused {
+    -fx-border-color: #005b7a;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, #1a5468, 8, 0.3, 0, 0);
+}
+
+/* 標籤 */
+.label {
+    -fx-text-fill: #f4f4f4;
+}
+
+/* 選單欄 */
+.menu-bar {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #404040;
+    -fx-border-width: 0 0 1 0;
+}
+
+.menu {
+    -fx-text-fill: white;
+}
+
+.menu:hover {
+    -fx-background-color: #404040;
+}
+
+.context-menu {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.menu-item:hover {
+    -fx-background-color: #404040;
+}
+
+/* 下拉選單 */
+.combo-box {
+    -fx-background-color: #3c3c3c;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #555555;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #404040;
+}
+
+/* 列表視圖 */
+.list-view {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+}
+
+.list-view .list-cell :odd {
+    -fx-background-color: #181818;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.list-view .list-cell :even {
+    -fx-background-color: #222;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #404040;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #0096c9;
+    -fx-text-fill: white;
+}
+
+/* 表格視圖 */
+.table-view {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #404040;
+    -fx-border-color: #555555;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.table-view .table-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: #404040;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #353535;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #0096c9;
+}
+
+
+/* 單選按鈕 */
+.radio-button {
+    -fx-text-fill: white;
+}
+
+.radio-button .radio {
+    -fx-background-color: #3c3c3c;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #0096c9;
+}
+
+/* 進度條 */
+.progress-bar {
+    -fx-background-color: #222;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #0096c9;
+    -fx-background-radius: 2;
+}
+
+/* 滑動條 */
+.slider {
+    -fx-background-color: #222;
+}
+
+.slider .track {
+    -fx-background-color: #555555;
+    -fx-background-radius: 2;
+}
+
+.slider .thumb {
+    -fx-background-color: #0096c9;
+    -fx-border-color: #555555;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+
+/* 分頁標籤 */
+.tab-pane {
+    -fx-background-color: #2b2b2b;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #2b2b2b;
+}
+
+.tab {
+    -fx-background-color: #404040;
+    -fx-text-fill: white;
+    -fx-border-color: #555555;
+    -fx-background-radius: 3 3 0 0;
+    -fx-border-radius: 3 3 0 0;
+}
+
+.tab:selected {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #0096c9 #555555 #2b2b2b #555555;
+    -fx-border-width: 2 1 0 1;
+}
+
+.tab:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.tab-pane .tab-content-area {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #555555;
+    -fx-border-width: 1 1 1 1;
+}
+
+/* 捲軸 */
+.scroll-bar {
+    -fx-background-color: #2b2b2b;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #2b2b2b;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #555555;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #666666;
+}
+
+.scroll-bar .thumb:pressed {
+    -fx-background-color: #777777;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: #222;
+}
+
+/* 分隔線 */
+.separator {
+    -fx-background-color: #555555;
+}
+
+/* 工具提示 */
+.tooltip {
+    -fx-background-color: #404040;
+    -fx-text-fill: white;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+    -fx-background-radius: 3;
+    -fx-border-radius: 3;
+}
+
+/* 對話框 */
+.dialog-pane {
+    -fx-background-color: #2b2b2b;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #404040;
+}
+
+/* 對話框標題 */
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #f4f4f4;
+}
+
+.dialog-pane .content {
+    -fx-background-color: #2b2b2b;
+}
+
+/* 樹狀檢視 */
+.tree-view {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+}
+
+.tree-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.tree-cell:selected {
+    -fx-background-color: #0096c9;
+    -fx-text-fill: white;
+}
+
+/* 日期選擇器 */
+.date-picker {
+    -fx-background-color: #3c3c3c;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #404040;
+    -fx-border-color: #555555;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+/* 標題列 */
+.title-bar {
+    -fx-background-color: #222;
+    -fx-text-fill: #f4f4f4;
+}
+
+/* 狀態列 */
+.status-bar {
+    -fx-background-color: #222;
+    -fx-text-fill: #f4f4f4;
+}
